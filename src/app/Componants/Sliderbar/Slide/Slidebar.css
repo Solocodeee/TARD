@@ -1,0 +1,42 @@
+/* تأثير الحركة */
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .icon-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .icon-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .icon-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .icon-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .icon-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .icon-item:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .icon-item:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .icon-item:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
