@@ -1,4 +1,4 @@
-"use client"; // 👈 أضف هذا السطر في أول الملف
+"use client"; 
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -9,14 +9,13 @@ import Image from "next/image";
 import CreateProduct from "../Componants/Dashboard/add/CreateProduct";
 
 
-// ✅ تعريف نوع المنتج
 type Product = {
   id: number;
   title: string;
   category: string;
   price: number;
   image: string;
-  isLoading?: boolean; // إضافة حالة تحميل لكل منتج
+  isLoading?: boolean; 
 };
 
 function Product() {
@@ -84,7 +83,7 @@ function Product() {
             Swal.fire("Deleted!", "Your product has been deleted.", "success");
           })
           .catch(() => {
-            setData(updatedData); // إعادة حالة البيانات في حالة حدوث خطأ
+            setData(updatedData); 
             Swal.fire(
               "Error!",
               "There was an issue deleting the product.",
@@ -182,7 +181,7 @@ function Product() {
                     <Image
                       src={d.image}
                       alt={d.title}
-                      width={56} // 14 * 4 = 56px
+                      width={56} 
                       height={56}
                       className="object-contain"
                     />

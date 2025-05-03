@@ -9,10 +9,8 @@ export default function NavProduct() {
 
   return (
     <div className="flex flex-wrap items-center justify-between px-6 py-4 rounded-md">
-    {/* Title */}
     <h2 className="text-sm sm:text-base md:text-lg font-semibold text-[#090914] flex-grow">Product Analytics</h2>
   
-    {/* Date Pickers */}
     <div className="flex items-center gap-3 justify-center flex-wrap mt-0 sm:mt-0">
     <DatePicker
   selected={startDate}

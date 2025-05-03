@@ -91,7 +91,7 @@ export default function EditProduct({ onClose }: EditProductProps) {
           Swal.fire("Success", "Product updated successfully!", "success");
           setTimeout(() => {
             router.push("/Test");
-            onClose(productId); // هنا قمنا باستخدام onClose لإغلاق النافذة بعد التحديث.
+            onClose(productId); 
           }, 2000);
         } else {
           Swal.fire("Error", "Failed to update the product.", "error");

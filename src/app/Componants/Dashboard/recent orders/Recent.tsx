@@ -5,9 +5,7 @@ import React from "react";
 function Recent() {
   return (
     <div className="mt-5">
-      {/* الـ container ده بيسمح بالتمرير الأفقي على الشاشات الصغيرة */}
       <div className="overflow-x-auto max-w-full">
-        {/* هنا العرض ثابت 719px */}
         <div className="bg-white w-[719px] h-[335px]">
           <table className="min-w-full table-fixed border-collapse border-gray-300 text-xs">
             <thead>

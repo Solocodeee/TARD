@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link"; // ✅ استيراد Link من next/link
+import Link from "next/link"; 
 import {
   FaTh,
   FaSuitcase,
@@ -32,7 +32,6 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* السايدبار في الشاشات الكبيرة */}
       <div
         className={`h-screen ${
           expanded ? "w-48" : "w-20"
@@ -73,7 +72,6 @@ export default function Sidebar() {
               </div>
             </Link>
 
-            {/* ✅ Projects link */}
             <Link href="/dashboard-products" className="icon-item">
               <div className="flex items-center space-x-2">
                 <FaSuitcase />
@@ -127,7 +125,6 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* السايدبار في الشاشات الصغيرة */}
       {mobileOpen && (
         <div className="fixed inset-0 z-50 bg-white w-48 shadow-md flex flex-col py-4 md:hidden transition-all duration-300 rounded-r-2xl">
           <div className="flex justify-end px-4 mb-4">
@@ -158,7 +155,6 @@ export default function Sidebar() {
               <span className="text-sm">Dashboard</span>
             </div>
 
-            {/* ✅ Projects link */}
             <Link href="/dashboard-products" className="icon-item">
               <div className="flex items-center space-x-2">
                 <FaSuitcase />
@@ -195,7 +191,7 @@ export default function Sidebar() {
           <div className="flex items-center space-x-3 px-4 mt-auto mb-4">
             <div className="w-10 h-10 rounded-full overflow-hidden bg-pink-100">
               <Image
-                src="/images/Subtract.svg"
+                src="/images/pexels-svenja-gross-1663970815-31891107.jpg"
                 alt="Profile"
                 width={40}
                 height={40}
@@ -203,7 +199,7 @@ export default function Sidebar() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold">John Doe</span>
+              <span className="text-sm font-semibold">Kaia Doe</span>
               <div className="flex items-center mt-2">
                 <FaUserCog className="text-gray-400 hover:text-indigo-500 text-xl cursor-pointer" />
               </div>

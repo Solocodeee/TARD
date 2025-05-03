@@ -83,7 +83,7 @@ export default function CreateProduct({ productId, onClose }: CreateProductProps
         if (response.ok) {
           Swal.fire("Success", "Product added successfully!", "success");
           setTimeout(() => {
-            onClose(null); // استخدم onClose بدلاً من التوجيه المباشر للتوافق مع الشاشة الحالية
+            onClose(null); 
           }, 2000);
 
           setProductName("");

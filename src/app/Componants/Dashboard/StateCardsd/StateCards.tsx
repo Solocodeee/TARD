@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-// تحديد نوع البيانات القادمة من API
 interface Product {
   id: number;
   title: string;
@@ -40,7 +39,6 @@ export default function CardsSection() {
   return (
     <div className="mt-5">
       <div className="All-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-        {/* Card 1 */}
         <div className="one-card">
           <div className="logo flex items-center gap-4 bg-white px-5 py-4 rounded max-w-xs w-full mx-auto">
             <div className="icon bg-[#b3c7f0] p-3 w-16 h-16 rounded-full flex items-center justify-center">
@@ -64,7 +62,6 @@ export default function CardsSection() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="one-card">
           <div className="logo flex items-center gap-4 bg-white px-5 py-4 rounded max-w-xs w-full mx-auto">
             <div className="icon bg-[#fde9b5] p-3 w-16 h-16 rounded-full flex items-center justify-center">
@@ -88,7 +85,6 @@ export default function CardsSection() {
           </div>
         </div>
 
-        {/* Card 3 */}
         <div className="one-card">
           <div className="logo flex items-center gap-4 bg-white px-5 py-4 rounded max-w-xs w-full mx-auto">
             <div className="icon  bg-[#ffd7ca] p-3 w-16 h-16 rounded-full flex items-center justify-center">

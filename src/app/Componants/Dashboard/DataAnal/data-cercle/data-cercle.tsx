@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { ApexOptions } from "apexcharts";
 import dynamic from "next/dynamic";
 
-// استيراد المخطط ديناميكيًا بدون SSR
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
